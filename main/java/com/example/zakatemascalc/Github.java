@@ -11,7 +11,7 @@ public class Github extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        goLink("https://www.youtube.com/watch?v=ipZaXDC23Bw");
+        goLink("https://github.com/meaaww1317/ZakatEmasKalkulator");
     }
 
     private void goLink(String s){
