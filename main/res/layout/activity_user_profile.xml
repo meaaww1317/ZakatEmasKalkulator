@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d1b2a"
+    tools:context=".UserProfile">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tajuk"
+        android:layout_below="@id/toolbar"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="PROFIL"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cikpah"
+        android:layout_below="@id/tajuk"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Nur Arifah Diyanah Binti Muhammad Rizal"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cikpahm"
+        android:layout_below="@id/cikpah"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="(2020477522)"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aliaa"
+        android:layout_below="@id/cikpahm"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Nur Aliah Faqihah binti Ramizi"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aliaa"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="(2020489106)"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

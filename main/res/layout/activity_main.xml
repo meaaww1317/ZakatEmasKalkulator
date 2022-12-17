@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d1b2a"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerhorizontalline" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/centerverticalline" />
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/pakaisimpannotfoc"
+        android:layout_above="@id/beratlayout"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/pakai">
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_above="@+id/textpakai"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/pakai"
+            android:layout_centerInParent="true"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#e0e1dd"
+            android:id="@+id/textpakai"
+            android:text="Pakai"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/pakaisimpannotfoc"
+        android:layout_above="@id/beratlayout"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/simpan">
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_above="@+id/textsimpan"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/simpan"
+            android:layout_centerInParent="true"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#e0e1dd"
+            android:id="@+id/textsimpan"
+            android:text="Simpan"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/beratlayout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/cardbackground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/hargaemas">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#e0e1dd"
+            android:text="Harga Emas"
+            android:id="@+id/textharga"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/currentharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#e0e1dd"
+            android:textColorHint="@drawable/selector"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/currentharga"
+            android:layout_marginEnd="20dp"
+            android:text="RM"
+            android:textColor="#e0e1dd"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/centerhorizontalline"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cardbackground"
+        android:id="@+id/beratlayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Berat Emas"
+            android:textSize="20sp"
+            android:textColor="#e0e1dd"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/currentberat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:textColor="#e0e1dd"
+            android:textColorHint="@drawable/selector"
+            android:textSize="40sp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g"
+            android:textSize="20sp"
+            android:textColor="#e0e1dd"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/currentberat"
+            android:layout_marginStart="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/clear"
+        android:layout_above="@id/calczakat"
+        android:textSize="15sp"
+        android:layout_marginBottom="15dp"
+        android:text="Mula Semula Pengiraan"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonbg"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/calczakat"
+        android:layout_alignParentBottom="true"
+        android:textSize="15sp"
+        android:layout_marginBottom="15dp"
+        android:text="Kira Nilai Zakat Emas"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonbg2"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
